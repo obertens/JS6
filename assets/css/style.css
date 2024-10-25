@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    gap: 10px;
+}
+
+h2 {
+    margin: 0%;
+}
+
+.container {
+    background-color: rgb(95, 95, 95);
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    width: 40vh;
+    border: 1px solid beige;
+}
+.container-chart {
+    max-width: 800px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 80vh;
+    height: fit-content;
+}
+
+label {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: large
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+select {
+    display: flex;
+    width: 70%;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+button {
+    background-color: #528ebf;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: medium;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5)
+}
+
+button:hover {
+    background-color: rgb(131, 131, 35);
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+#result {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.sub-chart {
+    color: black;
+    margin: 0;
+}
+
+canvas {
+    margin-top: 10px;
+    width: 100%
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 80vw;
+    }
+
+    .container-chart {
+        width: 90vw;
+        height: fit-content;
+    }
+}
